@@ -15,8 +15,6 @@ function ListConfirm() {
         setEditModalIsOpen(false);
     }
 
-
-
     function printModal(element) {
         setParticipante(element)
         setEditModalIsOpen(true);

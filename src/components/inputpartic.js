@@ -53,9 +53,9 @@ function Inputpartic(props) {
   }
   
   return (
-    <div  className={inputVisible ? '' : 'hidden'}>
-      <h3>Coloque aqui a lista de participantes</h3>
-      <input type='file' onChange={(e) => TransformCsvtoArray(e.target.files[0])} />
+    <div  className={inputVisible ? '' : 'hidden'} style={{borderBottom:"2px solid black", marginBottom:"15px", paddingBottom:"15px"}}>
+      <h4>Coloque aqui a lista de participantes</h4>
+      <input type='file' accept='.csv' onChange={(e) => TransformCsvtoArray(e.target.files[0])} />
     </div>
   )
 }
