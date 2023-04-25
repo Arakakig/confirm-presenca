@@ -1,0 +1,44 @@
+.item-confirm{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list-items{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.desconfirmado{
+    color: white;
+    background-color:#dc3545;
+}
+.desconfirmado:hover{
+    background-color: #bd2130;
+}
+.confirmado{
+    color: white;
+    background-color:#008000;
+}
+.confirmado:hover{
+    background-color:#006600;
+}
+.buttons-emit{
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-end;
+}
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+
+}

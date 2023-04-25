@@ -1,0 +1,11 @@
+.export-btn{
+    color: black !important;
+    text-decoration: none !important;
+    background-color: #d3d3d3;
+    border: 1px solid d3d3d3;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.export-btn:hover{
+    background-color: #a0a0a0;
+}
