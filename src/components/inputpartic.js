@@ -23,6 +23,7 @@ function Inputpartic(props) {
         let result = e.target.result.replace(/;/g, ',');
         let aux = result.split(/\r?\n/);
         aux.forEach((elemento, index) => {
+          elemento = elemento.replace(/"/g, ''); 
           let dados = elemento.split(',');
           let data = {
             name: dados[0],
