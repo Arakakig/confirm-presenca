@@ -9,8 +9,8 @@ function EmitCsv(props) {
         numero,
         nome_responsavel,
         numero_responsavel,
+        pago: pago ? "Paga" : "Pendente",
         chegou: chegou ? "Sim" : "Não",
-        pago: pago ? "Sim" : "Não",
         id
       }));
 
@@ -20,8 +20,8 @@ function EmitCsv(props) {
       { label: "Telefone", key: "numero" },
       { label: "Nome Responsável", key: "nome_responsavel" },
       { label: "Numero do Responsável", key: "numero_responsavel" },
-      { label: "Chegou", key: "chegou" },
       { label: "Pago", key: "pago" },
+      { label: "Chegou", key: "chegou" },
       { label: "ID", key: "id" }
     ];
   
