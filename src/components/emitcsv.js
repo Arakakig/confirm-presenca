@@ -10,7 +10,7 @@ function EmitCsv(props) {
         nome_responsavel,
         numero_responsavel,
         pago: pago ? "Paga" : "Pendente",
-        chegou: chegou ? "Sim" : "Não",
+        chegou: chegou ? "Presente" : "Ausente",
         id
       }));
 
