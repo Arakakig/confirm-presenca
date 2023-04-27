@@ -31,7 +31,7 @@ function Inputpartic(props) {
             nome_responsavel: dados[2],
             numero_responsavel: dados[3] != undefined ? dados[3] : '',
             pago: dados[4] == 'Paga' ? true : false,
-            chegou: dados[4] == 'Presente' ? true : false,
+            chegou: dados[5] == 'Presente' ? true : false,
             id: uniKey()
           }
           users.push(data);
