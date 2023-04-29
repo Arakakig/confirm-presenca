@@ -54,6 +54,10 @@ function Confirm(props) {
                             <h5>Pago:</h5>
                             <h5>{item.pago ? "Sim" : "Não"}</h5>
                         </div>
+                        <div className='d-flex gap-2 justify-content-center w-100'>
+                            <h5>Grupo:</h5>
+                            <h5>{item.grupo }</h5>
+                        </div>
                     </div>
                 </Modal.Body>
                 <Modal.Footer>

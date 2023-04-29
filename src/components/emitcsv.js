@@ -4,12 +4,13 @@ import './emitcsv.css'
 
 function EmitCsv(props) {
     // Converte os dados do groupParticipantes para o formato esperado pela biblioteca react-csv
-    const csvData = props.groupParticipantes.map(({ name, numero, nome_responsavel, numero_responsavel, pago, chegou, cpf, id }) => ({
+    const csvData = props.groupParticipantes.map(({ name, numero, nome_responsavel, numero_responsavel, pago, grupo, chegou, id }) => ({
         name,
         numero,
         nome_responsavel,
         numero_responsavel,
         pago: pago ? "Paga" : "Pendente",
+        grupo,
         chegou: chegou ? "Presente" : "Ausente",
         id
       }));
@@ -21,7 +22,8 @@ function EmitCsv(props) {
       { label: "Nome Responsável", key: "nome_responsavel" },
       { label: "Numero do Responsável", key: "numero_responsavel" },
       { label: "Pago", key: "pago" },
-      { label: "Chegou", key: "chegou" },
+      { label: "Pago", key: "pago" },
+      { label: "Grupo", key: "grupo" },
       { label: "ID", key: "id" }
     ];
   
