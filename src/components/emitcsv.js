@@ -22,8 +22,8 @@ function EmitCsv(props) {
       { label: "Nome Responsável", key: "nome_responsavel" },
       { label: "Numero do Responsável", key: "numero_responsavel" },
       { label: "Pago", key: "pago" },
-      { label: "Pago", key: "pago" },
       { label: "Grupo", key: "grupo" },
+      { label: "Chegou", key: "chegou" },
       { label: "ID", key: "id" }
     ];
   

@@ -14,3 +14,16 @@
 .hidden {
   display: none;
 }
+
+input{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+select{
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}

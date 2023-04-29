@@ -35,12 +35,12 @@ function ListConfirm() {
 
 
     const filteredParticipantesGroup = filteredGroupParticipantes.filter(participante => {
-        if(filterColor=='todos'){
-            return participante.grupo
+        if (filterColor === 'todos') {
+          return true;
         }
-    
-        return participante.grupo.toLowerCase().includes(filterColor.toLowerCase());
-    });
+        return participante.grupo.toLowerCase() === filterColor.toLowerCase();
+      });
+      
 
     const filteredParticipantesPres= filteredParticipantesGroup.filter(participante => {
        return participante.chegou == true;
